@@ -20,8 +20,8 @@ const Products = ({ cat, filters, sort }) => {
         window.scrollTo(0, 0);
         const res = await axios.get(
           cat
-            ? `http://strore-eccomerce.up.railway.app/api/products?category=${cat}`
-            : "http://strore-eccomerce.up.railway.app/api/products"
+            ? `https://strore-eccomerce.up.railway.app/api/products?category=${cat}`
+            : "https://strore-eccomerce.up.railway.app/api/products"
         );
         setProducts(res.data);
       } catch (err) {}
